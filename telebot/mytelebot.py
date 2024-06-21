@@ -1,7 +1,7 @@
 import os
 import telebot
 
-API_KEY = '7296146723:AAHPWuTR1HRnS_yRSzQEv2gnsT3CY467qyM'
+API_KEY = os.getenv('API_KEY')
 if API_KEY is None:
     raise ValueError("API_KEY environment variable is not set")
 
